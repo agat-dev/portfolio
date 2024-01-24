@@ -1,0 +1,69 @@
+$baseFont: 'beloved-sans', sans-serif;
+$codeFont: 'Tornac', sans-serif;
+$fontSizeSmall: 15px;
+
+body {
+	font-family: $baseFont;
+	font-size: 18px;
+	line-height: 1.65;
+	font-weight: 400;
+	@media (prefers-color-scheme: dark) {
+		color: color(gray, 200);
+	}
+	color: color(gray, 800);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	line-height: 1.2;
+	margin: 1em 0 0.5em 0;
+	@media (prefers-color-scheme: dark) {
+		color: $white;
+	}
+	color: color(gray, 950);
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 1.563em;
+}
+h2 {
+	font-size: 1.35;
+}
+h3 {
+	font-size: 1.27;
+}
+h4 {
+	font-size: 1.22;
+}
+h5 {
+	font-size: 1;
+}
+
+p {
+	margin: 0 0 1em 0;
+}
+
+code {
+	font-family: $codeFont;
+}
+
+b,
+strong {
+	font-weight: 700;
+	color: #fff;
+	@media (prefers-color-scheme: dark) {
+		color: $white;
+	}
+	color: color(gray, 950);
+}
+
+#site_title {
+    font-size: 1.563em;
+}

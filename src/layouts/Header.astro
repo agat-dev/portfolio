@@ -1,0 +1,24 @@
+---
+import "../styles/global.scss";
+import { SiteDescription, SiteTitle } from "../consts";
+import logoWhite from "../assets/img/branding/logo_blanc_carre.png";
+import logoNoir from "../assets/img/branding/logo_noir_carre.png";
+---
+
+<header>
+  <div>
+    <img
+      id="logo_carre_blanc"
+      src={logoWhite.src}
+      width="100px"
+      height="80px"
+    />
+    <img id="logo_carre_noir" src={logoNoir.src} width="100px" height="80px" />
+  </div>
+  <div>
+    <h1 id="site_title">{SiteTitle}</h1>
+  </div>
+  <div>
+    <h2>{SiteDescription}</h2>
+  </div>
+</header>
